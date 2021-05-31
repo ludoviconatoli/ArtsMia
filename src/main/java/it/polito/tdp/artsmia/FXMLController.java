@@ -47,7 +47,11 @@ public class FXMLController {
     
     @FXML
     void doAnalizzaOggetti(ActionEvent event) {
+    	txtResult.clear();
     	this.model.creaGrafo();
+    	txtResult.appendText("GRAFO CREATO!!\n\n");
+    	txtResult.appendText("# VERTICI: " + this.model.getNVertici() + "\n");
+    	txtResult.appendText("# ARCHI: " + this.model.getNArchi());
     }
 
     @FXML

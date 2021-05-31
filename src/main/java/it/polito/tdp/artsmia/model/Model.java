@@ -51,9 +51,15 @@ public class Model {
 			Graphs.addEdge(this.grafo, idMap.get(a.getId1()), idMap.get(a.getId2()), a.getPeso());
 		//recupero l'oggetto da idMap dall'id
 		
-		System.out.println("GRAFO CREATO");
-		System.out.println("#Vertici " + grafo.vertexSet().size());
-		System.out.println("#Archi " + grafo.edgeSet().size());
+		
+	}
+	
+	public int getNVertici() {
+		return this.grafo.vertexSet().size();
+	}
+	
+	public int getNArchi() {
+		return this.grafo.edgeSet().size();
 	}
 	
 }
